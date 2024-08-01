@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <script type="module" src="./game.js"></script>
+    <script type="module">
+        import SnakeGame from './game.js';
+        new SnakeGame(document.getElementById("game")).start()
+    </script>
+</head>
+<body>
+    <canvas id="game" width="600px" height="600px" style="border: 1px solid #ddd; padding:10px"></canvas>
+</body>
+</html>
